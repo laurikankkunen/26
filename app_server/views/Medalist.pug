@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= 'Olympic Gold Medal Winners In Ice Hockey'
+  ul
+    each winner in winners
+      li= winner.year + ': ' + winner.team
+
